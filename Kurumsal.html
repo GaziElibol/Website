@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Touring</title>
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/a4d2ac2f92.js" crossorigin="anonymous"></script>       
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(fotoğraflar/arkaplan.png);
+            background-size: cover;
+            box-sizing: fixed;
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+        img {
+            width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu-bar {
+            background: #812C41;
+            text-align: center;
+            box-sizing: border-box;
+            border: 6px solid #E0B423;
+        }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: white;
+        }
+        .menu-bar ul li {
+            width: 170px;
+            margin: 10px 15px 10px 15px;
+            padding: 15px;                       
+    
+        }
+        .menu-bar a {            
+            color: white;
+            width: 0 auto;
+            text-decoration: none;                       
+        }
+        .active{
+            background: #D96676;
+            border-radius: 8px;
+        } 
+        .menu-bar ul li:hover{
+            background:  #3B5999;
+            border-radius: 8px;
+            transition: 0.3s;    
+        }
+        .container{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .columns {
+            display: flex;            
+        }
+        .col-1{
+            width: 20%;            
+            background-color: white;
+            opacity: 0.93;
+            margin: 0;            
+            margin: 0 auto;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .col-2{
+            width: 60%;           
+            background-color: #a09f9f;
+            margin: 0;            
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            border-right: 8px solid #E0B423;
+            border-left: 8px solid #E0B423;
+            padding: 15px;
+
+        }
+        .col-3{
+            width: 20%;            
+            background-color: white;
+            opacity: 0.86;
+            margin: 0;            
+            margin: 0 auto;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .footer {
+            text-align: center;
+            background-color: #812C41;
+            text-decoration: none;
+            padding: 10px;
+            border: 6px solid #E0B423;
+            box-sizing: border-box;
+            display: flex;
+        }  
+        .copyright{
+            width: 70%;
+            font-size: 25px;
+        }
+        .empty{
+            width: 15%;
+        }
+        .social{
+            padding: 0;
+            margin: 0;
+            width: 15%;            
+        }
+        .social ul{
+            position: relative;
+            transform: translate(-50%, -50%);
+            display: flex;
+            top: 48%;
+            left: 28%;
+
+
+        }
+        .social a{
+
+        }
+        .social ul li{
+            list-style: none;
+            margin: 0 20px;
+        }
+        .social ul li .fab{
+            font-size: 20px;
+            line-height: 37px;
+            transition: 0.6s;
+            color: #000;
+        }
+        .social ul li .fab:hover{
+            color: #fff;            
+
+        }
+        .social ul li a{
+            position: relative;
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            transition: 0.6s;
+            box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+            justify-content: center;
+            text-decoration: none;                       
+        }
+        .social ul li a:hover{
+            transform: translate(0, -10px);
+        }
+        .social ul li:nth-child(1) a:hover {
+          background-color: #3b5999;  
+        }
+        .social ul li:nth-child(2) a:hover {
+          background-color: #e4405f;  
+        }
+        .social ul li:nth-child(3) a:hover {
+          background-color: #55acee;  
+        }
+        .social ul li:nth-child(4) a:hover {
+          background-color: #0077B5;  
+        }
+
+
+
+        @media screen and (max-width:1000px){
+            .menu-bar ul{
+                display: inline-block;
+                width: 100;                
+            }
+            .main .right-main .left-main {
+                width: 100%;                
+            }
+            img{
+                width: 25%;
+            }  
+            .columns {
+                flex-direction: column;                
+            } 
+            .col-1{
+                width: 100%;
+            }
+            .col-2{
+                width: 100%;
+            }
+            .col-3{
+                width: 100%;
+            }
+            .footer{
+                flex-direction: column;
+            } 
+            .socail ul{
+                width: 100%;
+                 }.
+            .copyright{
+                width: 100%;                               
+            }
+            .col-3 img {
+                width: 100%;
+
+            }
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+
+        <img src="fotoğraflar/icon.png">
+
+    </header>
+
+    <div class="menu-bar">
+        <ul class="manu-ul">
+            <a href="İndex.html"><li>Anasayfa</li></a>
+            <a href="Hizmetlerimiz.html"><li>Hizmetlerimiz</li></a>
+            <a href="Kurumsal.html"><li class="active">Kurumsal</li></a>
+            <a href="Kariyer.html"><li>Kariyer</li></a>
+            <a href="İletişim.html"><li>İletişim</li></a>        
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="columns">
+            <div class="col-1"><img src="fotoğraflar/gezme.jpg" style="width: 98%; opacity: 1;"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br><br>
+            Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="col-2"><h3>Tarihçemiz</h3><br><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et.</p><br><br><hr style=" border-top: 3px solid #E0B423;"><br><br><h3>Misyonumuz</h3><br><br><p>>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p><br><br><hr style=" border-top: 3px solid #E0B423;"><br><br><h3>Visyonumuz</h3><br><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</p></div>
+            <div class="col-3"><img src="fotoğraflar/paris.jpg" style="width: 98%; opacity: 1;"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br><br>
+            Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</div>           
+        </div>
+    </div>    
+    
+    <footer>
+        <div class="footer">
+            <div class="empty"></div> 
+            <div class="copyright"><h6>Copyright ©</h6></div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://tr-tr.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=tr" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/login?lang=tr" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://tr.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>            
+                
+            </div>
+                          
+    </footer>
+</body>
+</html>
